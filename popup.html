@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Cookies Viewer</title>
+    <style>
+        body {
+            overflow: hidden;
+            margin: 0;
+            background: white;
+            color: #303030;
+        }
+
+        .row {
+            width: 100%;
+            float: left;
+            margin-bottom: 10px;
+        }
+
+        label {
+            font-size: 13px;
+            font-family: arial, serif;
+            line-height: 1.5em;
+        }
+
+        .main {
+            width: 250px;
+            padding: 10px;
+        }
+
+        h4 {
+            font-size: 14px;
+            font-family: arial, serif;
+            color: #DB4437;
+            border-bottom: solid 1px gainsboro;
+            padding-bottom: 6px;
+            margin: 0 0 10px 0;
+        }
+
+        .footer a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #999;
+        }
+
+        .footer a:hover {
+            color: #494949;
+        }
+
+        .header {
+            float: left;
+            width: 100%;
+        }
+    </style>
+
+    <script src="lib/jquery-3.4.1.min.js"></script>
+    <script src="popup.js">
+    </script>
+</head>
+<body>
+<div class="header">
+    <div class=''>
+        <h4 style="line-height: 24px;padding: 5px 5px 5px 10px;color:#64C306;">
+            <img src="icon_128.png"
+                 style="width: 24px;margin-right: 5px;vertical-align: bottom;" alt="logo">
+            Cookies Viewer
+        </h4>
+    </div>
+</div>
+<div class="main">
+    <div class="row">
+        <label for="cookieresult" style="display:block;margin-bottom: 3px;">Cookies:
+            <label id='CurrentCookieUrl'
+                   style="color: #05aafc;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;max-width: 148px;display: inline-block;vertical-align: top;font-weight: bold;"></label>
+        </label>
+        <textarea id="cookieresult" rows="5" style="width:100%;word-break: break-all;"></textarea>
+    </div>
+</div>
+</body>
+</html>
